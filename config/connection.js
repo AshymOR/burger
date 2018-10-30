@@ -9,7 +9,7 @@ if (process.env.JAWSDB_URL) {
 		port: 3306,
 		host: 'localhost',
 		user: 'root',
-		password: '',
+		password: 'root',
 		database: 'burgers_db'
 	})
 };
@@ -22,5 +22,5 @@ connection.connect(function(err) {
   console.log('Connected to MySQL database as id ' + connection.threadId + '\n\n');
 });
 
-// Export connection for ORM use
+
 module.exports = connection;
